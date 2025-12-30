@@ -1,0 +1,329 @@
+/* Global design tokens & helpers */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-feature-settings: 'ss01' on, 'ss02' on;
+}
+
+/* Reusable classes shared across pages */
+.nav-link {
+  @apply text-slate-300 hover:text-white transition-colors duration-150;
+}
+
+.nav-link-active {
+  @apply text-white relative;
+}
+
+.nav-link-active::after {
+  content: '';
+  @apply absolute -bottom-2 left-0 right-0 mx-auto h-[2px] w-6 rounded-full bg-gradient-to-r from-syd-accent to-syd-accentAlt;
+}
+
+.mobile-link {
+  @apply flex items-center justify-between rounded-xl px-4 py-2.5 text-slate-300 bg-slate-950/40 border border-slate-800/60;
+}
+
+.mobile-link-active {
+  @apply border-syd-accent/60 text-white bg-slate-950/80;
+}
+
+.btn-primary-lg {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-syd-accent via-syd-accentSoft to-syd-accentAlt px-5 py-2.5 text-sm font-semibold text-white shadow-soft shadow-syd-accent/40 transition-all duration-200 hover:brightness-110 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-syd-accent;
+}
+
+.btn-ghost-lg {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-slate-700/80 bg-slate-950/50 px-5 py-2.5 text-sm font-semibold text-slate-100 hover:border-syd-accent/70 hover:text-white hover:bg-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-syd-accent;
+}
+
+.btn-outline-sm {
+  @apply inline-flex items-center justify-center rounded-full border border-slate-700/80 px-4 py-1.5 text-xs font-medium text-slate-100 hover:border-syd-accent hover:text-white;
+}
+
+.section-label {
+  @apply text-xs font-semibold tracking-[0.24em] uppercase text-syd-accent;
+}
+
+.section-heading {
+  @apply text-xl sm:text-2xl lg:text-3xl font-semibold text-slate-50;
+}
+
+.stat-pill {
+  @apply rounded-2xl border border-slate-800/90 bg-slate-950/80 px-4 py-3 text-xs;
+}
+
+.stat-label {
+  @apply text-[11px] uppercase tracking-[0.16em] text-slate-500 mb-1;
+}
+
+.stat-value {
+  @apply text-slate-100 font-medium;
+}
+
+.pill {
+  @apply inline-flex items-center gap-1.5 rounded-full border border-slate-800/80 bg-slate-950/80 px-3 py-1.5 text-[11px] text-slate-300;
+}
+
+.pill-ghost {
+  @apply inline-flex flex-col rounded-2xl border border-slate-800/80 bg-slate-950/80 px-3 py-2 gap-0.5;
+}
+
+.service-card {
+  @apply rounded-2xl border border-slate-800/80 bg-slate-950/80 p-4 flex flex-col gap-2 hover:border-syd-accent/70 hover:-translate-y-1 hover:shadow-soft transition-all duration-200;
+}
+
+.service-icon {
+  @apply inline-flex h-9 w-9 items-center justify-center rounded-xl bg-syd-accent/10 text-syd-accent;
+}
+
+.service-title {
+  @apply text-sm font-medium text-slate-100;
+}
+
+.service-body {
+  @apply text-xs text-slate-300 leading-relaxed;
+}
+
+.metric-card {
+  @apply rounded-2xl border border-slate-800/90 bg-slate-950/80 px-4 py-4 flex flex-col gap-1;
+}
+
+.metric-label {
+  @apply text-[11px] uppercase tracking-[0.16em] text-slate-500;
+}
+
+.metric-value {
+  @apply text-xl font-semibold text-slate-50;
+}
+
+.metric-caption {
+  @apply text-[11px] text-slate-400;
+}
+
+.standout-card {
+  @apply rounded-2xl border border-slate-800/80 bg-slate-950/80 p-5 flex flex-col gap-2;
+}
+
+.standout-label {
+  @apply text-[11px] uppercase tracking-[0.18em] text-syd-accent;
+}
+
+.standout-heading {
+  @apply text-sm font-semibold text-slate-100;
+}
+
+.standout-body {
+  @apply text-xs text-slate-300 leading-relaxed;
+}
+
+.footer-heading {
+  @apply text-xs font-semibold tracking-[0.16em] uppercase text-slate-400;
+}
+
+.footer-link {
+  @apply hover:text-slate-100 hover:underline underline-offset-4;
+}
+
+.bg-radial-soft {
+  background:
+    radial-gradient(circle at 0 0, rgba(15, 118, 134, 0.35), transparent 55%),
+    radial-gradient(circle at 100% 0, rgba(56, 189, 248, 0.22), transparent 55%),
+    #020617;
+}
+
+.value-card {
+  @apply rounded-2xl border border-slate-800/80 bg-slate-950/80 p-5 flex gap-3;
+}
+
+.value-icon {
+  @apply mt-1 inline-flex h-9 w-9 items-center justify-center rounded-xl bg-syd-accent/10 text-syd-accent;
+}
+
+.value-title {
+  @apply text-sm font-semibold text-slate-100;
+}
+
+.value-body {
+  @apply text-xs text-slate-300 leading-relaxed;
+}
+
+.timeline-item {
+  @apply relative pl-6;
+}
+
+.timeline-dot {
+  @apply absolute -left-[0.62rem] top-1 h-3 w-3 rounded-full bg-gradient-to-tr from-syd-accent to-syd-accentAlt border border-slate-900;
+}
+
+.timeline-content {
+  @apply space-y-1;
+}
+
+.timeline-year {
+  @apply text-[11px] uppercase tracking-[0.18em] text-slate-500;
+}
+
+.timeline-title {
+  @apply text-sm font-semibold text-slate-100;
+}
+
+.timeline-body {
+  @apply text-xs text-slate-300 leading-relaxed;
+}
+
+.service-card-lg {
+  @apply rounded-2xl border border-slate-800/80 bg-slate-950/80 p-5 flex flex-col gap-3 hover:-translate-y-1 hover:border-syd-accent/70 hover:shadow-soft transition-all duration-200;
+}
+
+.service-card-header {
+  @apply flex items-center justify-between gap-3;
+}
+
+.service-card-pill {
+  @apply inline-flex items-center gap-1.5 rounded-full border border-slate-800/70 bg-slate-950/80 px-3 py-1 text-[11px] text-slate-300;
+}
+
+.service-card-icon {
+  @apply h-8 w-8 rounded-xl bg-syd-accent/10 text-syd-accent flex items-center justify-center;
+}
+
+.service-card-title {
+  @apply text-sm font-semibold text-slate-50;
+}
+
+.service-card-body {
+  @apply text-xs text-slate-300 leading-relaxed;
+}
+
+.service-card-list {
+  @apply list-disc pl-4 space-y-1 text-xs text-slate-300;
+}
+
+.service-card-footer {
+  @apply text-[11px] text-slate-400;
+}
+
+.process-step {
+  @apply rounded-2xl border border-slate-800/80 bg-slate-950/80 p-5 space-y-2;
+}
+
+.process-step-number {
+  @apply text-[11px] uppercase tracking-[0.18em] text-syd-accent;
+}
+
+.process-step-title {
+  @apply text-sm font-semibold text-slate-100;
+}
+
+.process-step-body {
+  @apply text-xs text-slate-300 leading-relaxed;
+}
+
+.project-card {
+  @apply rounded-2xl border border-slate-800/80 bg-slate-950/80 p-5 flex flex-col gap-3 hover:-translate-y-1 hover:border-syd-accent/70 hover:shadow-soft transition-all duration-200;
+}
+
+.project-tag {
+  @apply inline-flex items-center gap-1.5 rounded-full border border-slate-800/70 bg-slate-950/80 px-3 py-1 text-[11px] text-slate-300;
+}
+
+.project-title {
+  @apply text-sm font-semibold text-slate-50;
+}
+
+.project-body {
+  @apply text-xs text-slate-300 leading-relaxed;
+}
+
+.project-meta {
+  @apply space-y-3 text-xs text-slate-300;
+}
+
+.project-meta dt {
+  @apply text-[11px] uppercase tracking-[0.18em] text-slate-500 mb-1;
+}
+
+.project-meta ul {
+  @apply list-disc pl-4 space-y-1;
+}
+
+.team-card {
+  @apply rounded-2xl border border-slate-800/80 bg-slate-950/80 p-5 flex flex-col gap-3 hover:-translate-y-1 hover:border-syd-accent/70 hover:shadow-soft transition-all duration-200;
+}
+
+.team-avatar {
+  @apply h-14 w-14 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center text-sm font-bold text-white;
+}
+
+.team-name {
+  @apply text-sm font-semibold text-slate-50;
+}
+
+.team-role {
+  @apply text-[11px] uppercase tracking-[0.16em] text-slate-400;
+}
+
+.team-bio {
+  @apply text-xs text-slate-300 leading-relaxed;
+}
+
+.team-footer {
+  @apply mt-1 flex items-center justify-between;
+}
+
+.team-link {
+  @apply inline-flex h-7 w-7 items-center justify-center rounded-full bg-slate-950/80 border border-slate-800/80 text-slate-300 hover:text-syd-accent hover:border-syd-accent;
+}
+
+.blog-card {
+  @apply rounded-2xl border border-slate-800/80 bg-slate-950/80 p-5 flex flex-col gap-3 hover:-translate-y-1 hover:border-syd-accent/70 hover:shadow-soft transition-all duration-200;
+}
+
+.blog-meta {
+  @apply flex items-center justify-between text-[11px] text-slate-400;
+}
+
+.blog-title {
+  @apply text-sm font-semibold text-slate-50;
+}
+
+.blog-excerpt {
+  @apply text-xs text-slate-300 leading-relaxed;
+}
+
+.blog-points {
+  @apply list-disc pl-4 space-y-1 text-xs text-slate-300;
+}
+
+.blog-link {
+  @apply inline-flex items-center gap-1 text-[11px] font-medium text-syd-accent hover:text-syd-accentAlt;
+}
+
+.form-label {
+  @apply block text-xs font-medium text-slate-200 mb-1.5;
+}
+
+.form-input {
+  @apply block w-full rounded-xl border border-slate-700/80 bg-slate-950/80 px-3 py-2 text-xs text-slate-100 placeholder:text-slate-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-syd-accent focus-visible:border-syd-accent;
+}
+
+.form-error {
+  @apply mt-1 text-[11px] text-rose-400;
+}
+
+/* Entrance animations for scroll reveal */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 0.5s ease-out,
+    transform 0.5s ease-out;
+}
+
+[data-animate].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
