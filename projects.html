@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore key projects delivered by SYD ICT Solutions, including Bidhaamiye University System, Haqabtire Inventory System, and Kobciye Investment Platform."
+    />
+    <title>Projects &amp; Portfolio | SYD ICT Solutions</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              syd: {
+                dark: '#020617',
+                accent: '#0f4a5c',
+                accentSoft: '#22c1c3',
+                accentAlt: '#38bdf8',
+                surface: '#020b12',
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+  <body class="bg-syd-dark text-slate-100 font-sans antialiased">
+    <div class="min-h-screen flex flex-col">
+      <!-- Shared Header -->
+      <header
+        class="sticky top-0 z-40 border-b border-slate-800/60 backdrop-blur-xl bg-syd-dark/70"
+        aria-label="Primary navigation"
+      >
+        <nav
+          class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4 lg:px-10"
+        >
+          <a
+            href="index.html"
+            class="flex items-center gap-3 group"
+            aria-label="SYD ICT Solutions home"
+          >
+            <div
+              class="h-10 w-10 rounded-full bg-slate-950/90 border border-slate-700/80 flex items-center justify-center shadow-soft overflow-hidden"
+            >
+              <img
+                src="https://media.publit.io/file/SYD/logo.jpg"
+                alt="SYD ICT Solutions logo"
+                class="h-8 w-8 object-contain"
+                loading="lazy"
+              />
+            </div>
+            <div class="flex flex-col leading-tight">
+              <span
+                class="text-sm font-semibold tracking-[0.18em] text-slate-200 group-hover:text-white transition-colors"
+                >SYD ICT</span
+              >
+              <span
+                class="text-xs text-slate-500 group-hover:text-slate-300 transition-colors"
+                >Intelligent Digital Systems</span
+              >
+            </div>
+          </a>
+
+          <button
+            class="lg:hidden inline-flex items-center justify-center rounded-full border border-slate-700/70 text-slate-200 px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-syd-accent"
+            id="mobile-nav-toggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div
+            id="desktop-nav"
+            class="hidden lg:flex items-center gap-10 text-sm font-medium"
+          >
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="projects.html" class="nav-link nav-link-active"
+              >Projects</a
+            >
+            <a href="team.html" class="nav-link">Team</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="contact.html" class="btn-outline-sm">Contact</a>
+          </div>
+        </nav>
+
+        <div
+          id="mobile-nav-menu"
+          class="lg:hidden hidden border-t border-slate-800 bg-syd-dark/95 backdrop-blur-xl"
+        >
+          <nav
+            class="max-w-7xl mx-auto px-6 py-4 space-y-2 text-sm font-medium"
+          >
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="about.html" class="mobile-link">About</a>
+            <a href="services.html" class="mobile-link">Services</a>
+            <a
+              href="projects.html"
+              class="mobile-link mobile-link-active"
+              >Projects</a
+            >
+            <a href="team.html" class="mobile-link">Team</a>
+            <a href="blog.html" class="mobile-link">Blog</a>
+            <a href="contact.html" class="mobile-link">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="flex-1">
+        <!-- Hero / Intro -->
+        <section
+          class="relative overflow-hidden border-b border-slate-800/80 bg-radial-soft"
+        >
+          <div
+            class="pointer-events-none absolute -left-40 -top-40 h-80 w-80 rounded-full bg-syd-accent/20 blur-3xl"
+          ></div>
+          <div
+            class="pointer-events-none absolute right-[-18rem] top-20 h-[24rem] w-[24rem] rounded-full bg-syd-accentAlt/25 blur-3xl"
+          ></div>
+
+          <div
+            class="relative max-w-7xl mx-auto px-6 pt-16 pb-14 lg:px-10 lg:pt-20 lg:pb-18"
+          >
+            <div class="max-w-3xl space-y-5">
+              <p class="section-label">Projects &amp; Portfolio</p>
+              <h1 class="section-heading text-3xl sm:text-4xl lg:text-5xl">
+                Real systems solving real challenges for Somali institutions.
+              </h1>
+              <p class="text-sm sm:text-base text-slate-300 max-w-2xl">
+                Our portfolio showcases digital solutions that streamline
+                operations, improve visibility and enhance the experience of
+                students, staff and customers.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Grid -->
+        <section
+          class="border-b border-slate-800/80 bg-slate-950/40"
+          aria-labelledby="projects-heading"
+        >
+          <div class="max-w-7xl mx-auto px-6 py-16 lg:px-10 lg:py-20">
+            <div class="flex flex-col lg:flex-row lg:items-end gap-6 mb-10">
+              <div class="lg:w-2/3 space-y-3">
+                <h2 id="projects-heading" class="section-label">
+                  Featured Projects
+                </h2>
+                <p class="section-heading">
+                  A selection of platforms designed and engineered by SYD ICT
+                  Solutions.
+                </p>
+              </div>
+              <div class="lg:w-1/3 text-sm text-slate-300">
+                <p>
+                  Each project combines robust engineering with an understanding
+                  of local institutional realities—from infrastructure
+                  constraints to regulatory requirements.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="grid gap-6 md:gap-8 md:grid-cols-2 xl:grid-cols-3"
+              aria-label="Project cards"
+            >
+              <!-- Bidhaamiye University System -->
+              <article class="project-card">
+                <div class="project-tag">
+                  <i class="fa-solid fa-building-columns"></i>
+                  University Management
+                </div>
+                <h3 class="project-title">Bidhaamiye University System</h3>
+                <p class="project-body">
+                  A comprehensive university management platform that centralizes
+                  student records, admissions, finance and academic operations in
+                  a single, secure system.
+                </p>
+                <dl class="project-meta">
+                  <div>
+                    <dt>Overview</dt>
+                    <dd>
+                      End-to-end digital backbone for university operations,
+                      designed to reduce manual paperwork and improve data
+                      accuracy.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Key Features</dt>
+                    <dd>
+                      <ul>
+                        <li>Online admissions and registration workflows</li>
+                        <li>Student records, transcripts and grading modules</li>
+                        <li>Fee management and finance reporting</li>
+                        <li>Role-based portals for students, lecturers and admin</li>
+                      </ul>
+                    </dd>
+                  </div>
+                </dl>
+              </article>
+
+              <!-- Haqabtire Inventory System -->
+              <article class="project-card">
+                <div class="project-tag">
+                  <i class="fa-solid fa-boxes-stacked"></i>
+                  Inventory &amp; Operations
+                </div>
+                <h3 class="project-title">Haqabtire Inventory System</h3>
+                <p class="project-body">
+                  A centralized inventory management solution that tracks stock
+                  movement, procurement and consumption across departments and
+                  branches.
+                </p>
+                <dl class="project-meta">
+                  <div>
+                    <dt>Overview</dt>
+                    <dd>
+                      Built for organizations that need a clear, real-time view
+                      of assets and inventory levels, minimizing losses and
+                      stockouts.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Key Features</dt>
+                    <dd>
+                      <ul>
+                        <li>Multi-location inventory tracking</li>
+                        <li>Purchase orders and supplier management</li>
+                        <li>Stock alerts and reorder thresholds</li>
+                        <li>Audit logs and usage analytics</li>
+                      </ul>
+                    </dd>
+                  </div>
+                </dl>
+              </article>
+
+              <!-- Kobciye Investment Platform -->
+              <article class="project-card">
+                <div class="project-tag">
+                  <i class="fa-solid fa-chart-line"></i>
+                  Investment Platform
+                </div>
+                <h3 class="project-title">Kobciye Investment Platform</h3>
+                <p class="project-body">
+                  A digital platform for managing investment portfolios,
+                  investor profiles and returns, with transparent reporting and
+                  secure access.
+                </p>
+                <dl class="project-meta">
+                  <div>
+                    <dt>Overview</dt>
+                    <dd>
+                      Designed to support investment firms and cooperatives with
+                      clear tracking, calculations and communication to
+                      stakeholders.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Key Features</dt>
+                    <dd>
+                      <ul>
+                        <li>Investor onboarding and KYC records</li>
+                        <li>Investment plans and portfolio tracking</li>
+                        <li>Automated profit calculations and statements</li>
+                        <li>Secure investor portals and dashboards</li>
+                      </ul>
+                    </dd>
+                  </div>
+                </dl>
+              </article>
+
+              <!-- Mobile & Web Apps -->
+              <article class="project-card">
+                <div class="project-tag">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                  Mobile &amp; Web Apps
+                </div>
+                <h3 class="project-title">Mobile &amp; Web Applications</h3>
+                <p class="project-body">
+                  A collection of mobile and web apps that extend institutional
+                  systems to students, staff and customers—anytime, anywhere.
+                </p>
+                <dl class="project-meta">
+                  <div>
+                    <dt>Overview</dt>
+                    <dd>
+                      Companion applications that integrate with core platforms,
+                      enabling self-service, notifications and real-time access
+                      to information.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Key Features</dt>
+                    <dd>
+                      <ul>
+                        <li>Student apps for timetables and results</li>
+                        <li>Staff tools for approvals and task management</li>
+                        <li>Customer-facing apps for services and support</li>
+                        <li>Push notifications and offline-friendly design</li>
+                      </ul>
+                    </dd>
+                  </div>
+                </dl>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <section
+          class="border-b border-slate-800/80 bg-slate-950/80"
+          aria-label="Start a project"
+        >
+          <div
+            class="max-w-7xl mx-auto px-6 py-12 lg:px-10 lg:py-16 flex flex-col md:flex-row gap-6 md:items-center md:justify-between"
+          >
+            <div class="space-y-2 max-w-xl">
+              <p class="text-xs font-semibold tracking-[0.24em] uppercase text-syd-accent">
+                Your project
+              </p>
+              <p class="text-lg md:text-xl font-semibold text-slate-50">
+                Have a system in mind? Let’s turn it into a real product.
+              </p>
+              <p class="text-sm text-slate-300">
+                Whether you’re launching a new platform or modernizing an
+                existing system, we’ll help you design a solution that fits your
+                context and roadmap.
+              </p>
+            </div>
+            <a href="contact.html" class="btn-primary-lg w-full md:w-auto">
+              Start a Project
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <!-- Shared Footer -->
+      <footer
+        class="border-t border-slate-900/80 bg-slate-950/90"
+        aria-label="Footer"
+      >
+        <div
+          class="max-w-7xl mx-auto px-6 py-10 lg:px-10 lg:py-12 grid md:grid-cols-4 gap-8 text-sm"
+        >
+          <div class="space-y-4 md:col-span-2">
+            <div class="flex items-center gap-3">
+              <div
+                class="h-9 w-9 rounded-full bg-slate-950 border border-slate-700 flex items-center justify-center overflow-hidden"
+              >
+                <img
+                  src="https://media.publit.io/file/SYD/logo.jpg"
+                  alt="SYD ICT Solutions logo"
+                  class="h-7 w-7 object-contain"
+                  loading="lazy"
+                />
+              </div>
+              <div class="flex flex-col leading-tight">
+                <span
+                  class="text-[11px] font-semibold tracking-[0.18em] text-slate-300"
+                  >SYD ICT SOLUTIONS</span
+                >
+                <span class="text-[11px] text-slate-500">
+                  Transforming ideas into intelligent digital systems.
+                </span>
+              </div>
+            </div>
+            <p class="text-slate-400 text-xs max-w-xl">
+              SYD ICT Solutions is a Mogadishu-based technology company focused
+              on building secure, scalable and human-centered digital solutions
+              for universities, enterprises and organizations.
+            </p>
+          </div>
+          <div class="space-y-3">
+            <p class="footer-heading">Navigation</p>
+            <ul class="space-y-2 text-slate-400">
+              <li><a href="about.html" class="footer-link">About</a></li>
+              <li><a href="services.html" class="footer-link">Services</a></li>
+              <li><a href="projects.html" class="footer-link">Projects</a></li>
+              <li><a href="team.html" class="footer-link">Team</a></li>
+              <li><a href="blog.html" class="footer-link">Blog</a></li>
+            </ul>
+          </div>
+          <div class="space-y-3">
+            <p class="footer-heading">Contact</p>
+            <ul class="space-y-1 text-slate-400">
+              <li>Mogadishu, Somalia</li>
+              <li>
+                <a href="tel:+252000000000" class="footer-link"
+                  >Phone: +252 (0) 00 000 000</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@sydict.com" class="footer-link"
+                  >Email: info@sydict.com</a
+                >
+              </li>
+              <li>
+                <a href="https://www.sydict.com" class="footer-link"
+                  >www.sydict.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-slate-900/80 px-6 lg:px-10 py-4 text-[11px] text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-2 max-w-7xl mx-auto"
+        >
+          <p>© <span id="year"></span> SYD ICT Solutions. All rights reserved.</p>
+          <p>Designed &amp; engineered with care for modern institutions.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+
+

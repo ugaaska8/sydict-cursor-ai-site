@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="SYD ICT Solutions builds intelligent software, mobile apps, and digital platforms that help businesses grow faster and operate smarter."
+    />
+    <title>SYD ICT Solutions | Transforming Ideas into Digital Solutions</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              syd: {
+                dark: '#020617', // page background
+                accent: '#0f4a5c', // primary brand teal (from logo)
+                accentSoft: '#22c1c3', // softer teal for gradients
+                accentAlt: '#38bdf8', // supporting cyan highlight
+                surface: '#020b12', // elevated surfaces
+              },
+            },
+            boxShadow: {
+              soft: '0 24px 80px rgba(15,23,42,0.75)',
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+  <body
+    class="bg-syd-dark text-slate-100 font-sans antialiased scroll-smooth"
+  >
+    <!-- Global Page Wrapper -->
+    <div class="min-h-screen flex flex-col">
+      <!-- Navigation -->
+      <header
+        class="sticky top-0 z-40 border-b border-slate-800/60 backdrop-blur-xl bg-syd-dark/70"
+        aria-label="Primary navigation"
+      >
+        <nav
+          class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4 lg:px-10"
+        >
+          <a
+            href="index.html"
+            class="flex items-center gap-3 group"
+            aria-label="SYD ICT Solutions home"
+          >
+            <div
+              class="h-10 w-10 rounded-full bg-slate-950/90 border border-slate-700/80 flex items-center justify-center shadow-soft overflow-hidden"
+            >
+              <!-- Brand logo -->
+              <img
+                src="https://media.publit.io/file/SYD/logo.jpg"
+                alt="SYD ICT Solutions logo"
+                class="h-8 w-8 object-contain"
+                loading="lazy"
+              />
+            </div>
+            <div class="flex flex-col leading-tight">
+              <span
+                class="text-sm font-semibold tracking-[0.18em] text-slate-200 group-hover:text-white transition-colors"
+                >SYD ICT</span
+              >
+              <span
+                class="text-xs text-slate-500 group-hover:text-slate-300 transition-colors"
+                >Intelligent Digital Systems</span
+              >
+            </div>
+          </a>
+
+          <button
+            class="lg:hidden inline-flex items-center justify-center rounded-full border border-slate-700/70 text-slate-200 px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-syd-accent"
+            id="mobile-nav-toggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div
+            id="desktop-nav"
+            class="hidden lg:flex items-center gap-10 text-sm font-medium"
+          >
+            <a href="index.html" class="nav-link nav-link-active">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="team.html" class="nav-link">Team</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="contact.html" class="btn-outline-sm">Contact</a>
+          </div>
+        </nav>
+
+        <!-- Mobile menu -->
+        <div
+          id="mobile-nav-menu"
+          class="lg:hidden hidden border-t border-slate-800 bg-syd-dark/95 backdrop-blur-xl"
+        >
+          <nav
+            class="max-w-7xl mx-auto px-6 py-4 space-y-2 text-sm font-medium"
+          >
+            <a href="index.html" class="mobile-link mobile-link-active">Home</a>
+            <a href="about.html" class="mobile-link">About</a>
+            <a href="services.html" class="mobile-link">Services</a>
+            <a href="projects.html" class="mobile-link">Projects</a>
+            <a href="team.html" class="mobile-link">Team</a>
+            <a href="blog.html" class="mobile-link">Blog</a>
+            <a href="contact.html" class="mobile-link">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="flex-1">
+        <!-- Hero Section -->
+        <section
+          class="relative overflow-hidden border-b border-slate-800/80 bg-radial-soft"
+        >
+          <!-- Gradient Orbs -->
+          <div
+            class="pointer-events-none absolute -left-40 -top-40 h-96 w-96 rounded-full bg-syd-accent/20 blur-3xl"
+          ></div>
+          <div
+            class="pointer-events-none absolute right-[-18rem] top-20 h-[30rem] w-[30rem] rounded-full bg-syd-accentAlt/25 blur-3xl"
+          ></div>
+
+          <div
+            class="relative max-w-7xl mx-auto px-6 pt-20 pb-16 lg:px-10 lg:pt-28 lg:pb-24"
+          >
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
+              <div class="lg:col-span-7 space-y-8">
+                <p
+                  class="inline-flex items-center gap-2 rounded-full border border-syd-accent/40 bg-slate-950/80 px-3 py-1.5 text-xs font-medium text-slate-100 shadow-soft"
+                >
+                  <span
+                    class="inline-flex h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"
+                  ></span>
+                  Trusted ICT partner for universities and enterprises in Somalia
+                </p>
+
+                <div class="space-y-4">
+                  <h1
+                    class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold tracking-tight text-white leading-tight"
+                  >
+                    Transforming
+                    <span
+                      class="bg-gradient-to-r from-syd-accent via-syd-accentAlt to-syd-accentSoft bg-clip-text text-transparent"
+                      >Ideas</span
+                    >
+                    into Digital Solutions
+                  </h1>
+                  <p class="text-base sm:text-lg text-slate-300 max-w-2xl">
+                    We build intelligent software systems, mobile apps, and
+                    digital platforms that help businesses grow faster, operate
+                    smarter, and work efficiently. Empower your business with
+                    modern ICT technology—from concept to deployment, we deliver
+                    scalable and future-ready solutions.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap gap-4 items-center">
+                  <a href="contact.html" class="btn-primary-lg"
+                    >Get Started</a
+                  >
+                  <a href="services.html" class="btn-ghost-lg"
+                    >Request a Quote</a
+                  >
+                  <div class="flex items-center gap-2 text-xs text-slate-400">
+                    <span
+                      class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-slate-900/70 border border-slate-700/70"
+                    >
+                      <i class="fa-solid fa-shield-halved text-syd-accent"></i>
+                    </span>
+                    <span>Secure, scalable &amp; tailored to your institution</span>
+                  </div>
+                </div>
+
+                <div
+                  class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-800/80 mt-4"
+                >
+                  <div class="stat-pill">
+                    <p class="stat-label">Clients</p>
+                    <p class="stat-value">Universities &amp; Enterprises</p>
+                  </div>
+                  <div class="stat-pill">
+                    <p class="stat-label">Region</p>
+                    <p class="stat-value">Serving Somalia &amp; beyond</p>
+                  </div>
+                  <div class="stat-pill sm:col-span-1 col-span-2">
+                    <p class="stat-label">Tagline</p>
+                    <p class="stat-value">
+                      👉 Innovate • Build • Launch • Scale
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Hero Visual -->
+              <div class="lg:col-span-5">
+                <div
+                  class="relative rounded-3xl border border-slate-800/80 bg-gradient-to-br from-slate-950/90 via-syd-surface to-slate-950/90 p-5 shadow-soft"
+                >
+                  <div
+                    class="absolute -top-10 -right-8 h-28 w-28 rounded-full bg-gradient-to-tr from-syd-accent/70 to-syd-accentAlt/70 blur-2xl opacity-80"
+                  ></div>
+                  <div
+                    class="absolute -bottom-10 -left-6 h-32 w-32 rounded-full bg-gradient-to-tr from-syd-accentAlt/40 to-syd-accent/20 blur-3xl opacity-70"
+                  ></div>
+
+                  <div
+                    class="relative space-y-4 border border-slate-800/90 rounded-2xl bg-slate-950/60 p-4"
+                  >
+                    <div class="flex items-center justify-between gap-3">
+                      <div class="flex items-center gap-3">
+                        <div
+                          class="h-9 w-9 rounded-xl bg-gradient-to-tr from-syd-accent to-syd-accentAlt flex items-center justify-center shadow-soft"
+                        >
+                          <i class="fa-solid fa-diagram-project text-sm"></i>
+                        </div>
+                        <div class="space-y-0.5">
+                          <p class="text-xs font-semibold text-slate-100">
+                            University &amp; Business Management Suite
+                          </p>
+                          <p class="text-[11px] text-slate-400">
+                            Real-time dashboards • Automation • Analytics
+                          </p>
+                        </div>
+                      </div>
+                      <span
+                        class="inline-flex items-center gap-1 rounded-full bg-emerald-500/10 px-3 py-1 text-[11px] font-medium text-emerald-300 border border-emerald-500/30"
+                      >
+                        <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                        Live in production
+                      </span>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-2 text-[11px]">
+                      <div
+                        class="rounded-xl border border-slate-800/80 bg-slate-950/70 p-3"
+                      >
+                        <p class="text-slate-400 mb-1">Institutions Served</p>
+                        <p class="text-slate-100 font-semibold text-sm">
+                          10+
+                        </p>
+                        <p class="text-[10px] text-emerald-300 mt-1">
+                          +3 onboarding
+                        </p>
+                      </div>
+                      <div
+                        class="rounded-xl border border-slate-800/80 bg-slate-950/70 p-3"
+                      >
+                        <p class="text-slate-400 mb-1">Automation Rate</p>
+                        <p class="text-slate-100 font-semibold text-sm">
+                          65%
+                        </p>
+                        <p class="text-[10px] text-emerald-300 mt-1">
+                          Manual tasks reduced
+                        </p>
+                      </div>
+                      <div
+                        class="rounded-xl border border-slate-800/80 bg-slate-950/70 p-3"
+                      >
+                        <p class="text-slate-400 mb-1">Satisfaction</p>
+                        <p class="text-slate-100 font-semibold text-sm">
+                          4.9/5
+                        </p>
+                        <p class="text-[10px] text-emerald-300 mt-1">
+                          Support &amp; delivery
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="flex items-center justify-between gap-3 pt-2 border-t border-slate-800/80 mt-1"
+                    >
+                      <div class="flex items-center gap-2">
+                        <span
+                          class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-slate-900/90 border border-slate-700/80"
+                        >
+                          <i
+                            class="fa-solid fa-cloud-arrow-up text-sky-400 text-xs"
+                          ></i>
+                        </span>
+                        <p class="text-[11px] text-slate-400">
+                          Cloud-native, secure and built for scale in Somalia.
+                        </p>
+                      </div>
+                      <a
+                        href="projects.html"
+                        class="inline-flex items-center gap-1 text-[11px] font-medium text-syd-accent hover:text-syd-accentAlt transition-colors"
+                      >
+                        View case studies
+                        <i class="fa-solid fa-arrow-right-long text-[10px]"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Who We Are & What We Do -->
+        <section
+          class="border-b border-slate-800/80 bg-slate-950/40"
+          aria-labelledby="who-we-are-heading"
+        >
+          <div
+            class="max-w-7xl mx-auto px-6 py-16 lg:px-10 lg:py-20 grid lg:grid-cols-12 gap-10"
+          >
+            <div class="lg:col-span-5 space-y-6">
+              <h2
+                id="who-we-are-heading"
+                class="section-label"
+              >
+                Who We Are
+              </h2>
+              <p class="section-heading">
+                A forward-thinking ICT partner based in Mogadishu.
+              </p>
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                SYD ICT Solutions is a forward-thinking technology company based
+                in Mogadishu, Somalia. We specialize in building customized
+                digital systems that solve real business challenges through
+                innovation, automation and strategic ICT development.
+              </p>
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                From universities to enterprises, we design, develop and
+                implement smart digital ecosystems that simplify operations,
+                enhance decision-making and unlock new growth opportunities.
+              </p>
+              <div class="flex flex-wrap gap-3 pt-2">
+                <span class="pill">
+                  <i class="fa-solid fa-check-circle text-emerald-400"></i>
+                  Outcome-driven delivery
+                </span>
+                <span class="pill">
+                  <i class="fa-solid fa-globe text-syd-accentAlt"></i>
+                  Regional &amp; global standards
+                </span>
+                <span class="pill">
+                  <i class="fa-solid fa-users-gear text-syd-accent"></i>
+                  Human-centered technology
+                </span>
+              </div>
+            </div>
+
+            <div class="lg:col-span-7 space-y-8">
+              <div class="flex items-center justify-between gap-4">
+                <h3 class="section-label">What We Do</h3>
+                <p class="text-xs uppercase tracking-[0.24em] text-slate-500">
+                  Innovate • Build • Launch • Scale
+                </p>
+              </div>
+              <div
+                class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"
+                aria-label="Primary services"
+              >
+                <article class="service-card">
+                  <div class="service-icon">
+                    <i class="fa-solid fa-code-branch"></i>
+                  </div>
+                  <h3 class="service-title">Software Development</h3>
+                  <p class="service-body">
+                    Custom-built platforms tailored to your workflows—secure,
+                    modular and designed to grow with your organization.
+                  </p>
+                </article>
+
+                <article class="service-card">
+                  <div class="service-icon">
+                    <i class="fa-solid fa-display"></i>
+                  </div>
+                  <h3 class="service-title">Web &amp; Mobile Apps</h3>
+                  <p class="service-body">
+                    Responsive web portals and mobile applications that keep
+                    your teams, students and customers connected anywhere.
+                  </p>
+                </article>
+
+                <article class="service-card">
+                  <div class="service-icon">
+                    <i class="fa-solid fa-building-columns"></i>
+                  </div>
+                  <h3 class="service-title">
+                    University &amp; Business Systems
+                  </h3>
+                  <p class="service-body">
+                    End-to-end management systems for admissions, finance,
+                    HR, inventory, and more—all in one unified platform.
+                  </p>
+                </article>
+
+                <article class="service-card">
+                  <div class="service-icon">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                  </div>
+                  <h3 class="service-title">
+                    ICT Consulting &amp; Transformation
+                  </h3>
+                  <p class="service-body">
+                    Strategic ICT advisory to modernize your infrastructure,
+                    digitize processes and align technology with business goals.
+                  </p>
+                </article>
+
+                <article class="service-card">
+                  <div class="service-icon">
+                    <i class="fa-solid fa-palette"></i>
+                  </div>
+                  <h3 class="service-title">
+                    UI/UX, Branding &amp; Multimedia
+                  </h3>
+                  <p class="service-body">
+                    Elegant interfaces, visual identities and content that
+                    communicate trust, clarity and innovation.
+                  </p>
+                </article>
+
+                <article class="service-card">
+                  <div class="service-icon">
+                    <i class="fa-solid fa-headset"></i>
+                  </div>
+                  <h3 class="service-title">Support &amp; Training</h3>
+                  <p class="service-body">
+                    Dedicated technical support and hands-on training for your
+                    teams to ensure seamless adoption.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Impact Counters -->
+        <section
+          class="border-b border-slate-800/80 bg-gradient-to-r from-slate-950 via-syd-surface to-slate-950"
+          aria-labelledby="impact-heading"
+        >
+          <div class="max-w-7xl mx-auto px-6 py-16 lg:px-10 lg:py-20">
+            <div class="flex flex-col lg:flex-row lg:items-end gap-8">
+              <div class="lg:w-1/3 space-y-4">
+                <h2 id="impact-heading" class="section-label">
+                  Our Impact in Numbers
+                </h2>
+                <p class="section-heading">
+                  Trusted by institutions and businesses across Somalia.
+                </p>
+                <p class="text-sm sm:text-base text-slate-300">
+                  Every solution we build is measured by the value it delivers:
+                  time saved, processes simplified and decisions made smarter.
+                </p>
+              </div>
+              <div
+                class="lg:w-2/3 grid grid-cols-2 sm:grid-cols-3 gap-5"
+                aria-label="SYD ICT Solutions impact metrics"
+              >
+                <div class="metric-card">
+                  <p class="metric-label">Completed Projects</p>
+                  <p
+                    class="metric-value"
+                    data-counter
+                    data-target="20"
+                    aria-label="More than 20 completed projects"
+                  >
+                    0+
+                  </p>
+                  <p class="metric-caption">Deployed &amp; maintained</p>
+                </div>
+                <div class="metric-card">
+                  <p class="metric-label">Institutions Served</p>
+                  <p
+                    class="metric-value"
+                    data-counter
+                    data-target="10"
+                    aria-label="More than 10 institutions served"
+                  >
+                    0+
+                  </p>
+                  <p class="metric-caption">Universities &amp; colleges</p>
+                </div>
+                <div class="metric-card">
+                  <p class="metric-label">Digital Solutions</p>
+                  <p
+                    class="metric-value"
+                    data-counter
+                    data-target="6"
+                    aria-label="More than 6 digital solutions developed"
+                  >
+                    0+
+                  </p>
+                  <p class="metric-caption">Purpose-built platforms</p>
+                </div>
+                <div class="metric-card">
+                  <p class="metric-label">Years of Experience</p>
+                  <p
+                    class="metric-value"
+                    data-counter
+                    data-target="5"
+                    aria-label="More than 5 years of experience"
+                  >
+                    0+
+                  </p>
+                  <p class="metric-caption">Rooted in local context</p>
+                </div>
+                <div class="metric-card">
+                  <p class="metric-label">Team Size</p>
+                  <p
+                    class="metric-value"
+                    data-counter
+                    data-target="11"
+                    data-suffix="–50"
+                    aria-label="11 to 50 skilled professionals"
+                  >
+                    0
+                  </p>
+                  <p class="metric-caption">Skilled professionals</p>
+                </div>
+                <div class="metric-card">
+                  <p class="metric-label">Delivery Rating</p>
+                  <p
+                    class="metric-value"
+                    data-counter
+                    data-target="98"
+                    data-suffix="%"
+                    aria-label="98 percent on-time delivery"
+                  >
+                    0%
+                  </p>
+                  <p class="metric-caption">On-time implementation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Why We Stand Out -->
+        <section
+          class="border-b border-slate-800/80 bg-slate-950/60"
+          aria-labelledby="why-stand-out-heading"
+        >
+          <div
+            class="max-w-7xl mx-auto px-6 py-16 lg:px-10 lg:py-20 grid lg:grid-cols-12 gap-10 items-start"
+          >
+            <div class="lg:col-span-5 space-y-6">
+              <h2 id="why-stand-out-heading" class="section-label">
+                Why We Stand Out
+              </h2>
+              <p class="section-heading">
+                Built on trust, reliability and measurable outcomes.
+              </p>
+              <p class="text-sm sm:text-base text-slate-300">
+                We combine robust engineering with a deep understanding of local
+                realities to deliver ICT solutions that work in practice—not
+                just on paper.
+              </p>
+              <ul class="space-y-3 text-sm text-slate-300">
+                <li class="flex gap-3">
+                  <span
+                    class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-syd-accent/20 text-syd-accent"
+                  >
+                    <i class="fa-solid fa-user-check text-[10px]"></i>
+                  </span>
+                  <div>
+                    <p class="font-medium text-slate-100">
+                      User-centered development
+                    </p>
+                    <p>
+                      We co-design with your teams to ensure every feature is
+                      intuitive, useful and aligned with real workflows.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex gap-3">
+                  <span
+                    class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-syd-accentAlt/20 text-syd-accentAlt"
+                  >
+                    <i class="fa-solid fa-lock text-[10px]"></i>
+                  </span>
+                  <div>
+                    <p class="font-medium text-slate-100">
+                      Secure &amp; scalable solutions
+                    </p>
+                    <p>
+                      From data protection to infrastructure design, security
+                      and scalability are embedded from day one.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex gap-3">
+                  <span
+                    class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-400"
+                  >
+                    <i class="fa-solid fa-calendar-check text-[10px]"></i>
+                  </span>
+                  <div>
+                    <p class="font-medium text-slate-100">
+                      On-time delivery &amp; reliable support
+                    </p>
+                    <p>
+                      Clear roadmaps, transparent communication and a support
+                      team that stays with you long after launch.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex gap-3">
+                  <span
+                    class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-amber-500/15 text-amber-300"
+                  >
+                    <i class="fa-solid fa-hand-holding-dollar text-[10px]"></i>
+                  </span>
+                  <div>
+                    <p class="font-medium text-slate-100">
+                      Affordable &amp; sustainable pricing
+                    </p>
+                    <p>
+                      Flexible engagement models designed for institutions and
+                      businesses at different stages of digital maturity.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="lg:col-span-7 space-y-7">
+              <div
+                class="grid sm:grid-cols-2 gap-5"
+                aria-label="Service model highlights"
+              >
+                <div class="standout-card">
+                  <p class="standout-label">Long-term partnership</p>
+                  <p class="standout-heading">
+                    From first workshop to continuous improvement.
+                  </p>
+                  <p class="standout-body">
+                    We plan beyond launch: upgrades, integrations and new
+                    modules that evolve with your operations.
+                  </p>
+                </div>
+                <div class="standout-card">
+                  <p class="standout-label">Local insight, global quality</p>
+                  <p class="standout-heading">
+                    Built for Somalia, benchmarked globally.
+                  </p>
+                  <p class="standout-body">
+                    We blend international best practices with an understanding
+                    of connectivity, infrastructure and on-ground realities.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col md:flex-row items-center justify-between gap-6 rounded-3xl border border-slate-800/80 bg-slate-950/80 px-6 py-6 shadow-soft"
+              >
+                <div class="space-y-2">
+                  <p class="text-xs font-semibold tracking-[0.24em] uppercase text-syd-accent">
+                    Call to action
+                  </p>
+                  <p class="text-lg md:text-xl font-semibold text-slate-50">
+                    Let’s build your next digital product — professionally.
+                  </p>
+                  <p class="text-sm text-slate-300 max-w-xl">
+                    Share your idea, current challenge or existing system. Our
+                    team will translate it into a clear, actionable roadmap and
+                    a tailored solution.
+                  </p>
+                </div>
+                <div class="flex flex-col items-stretch gap-3 w-full md:w-auto">
+                  <a href="contact.html" class="btn-primary-lg w-full md:w-auto">
+                    Contact Us Today
+                  </a>
+                  <a
+                    href="services.html"
+                    class="inline-flex items-center justify-center gap-2 text-xs text-slate-400 hover:text-slate-100 transition-colors"
+                  >
+                    or explore our full range of services
+                    <i class="fa-solid fa-arrow-right-long text-[11px]"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer
+        class="border-t border-slate-900/80 bg-slate-950/90"
+        aria-label="Footer"
+      >
+        <div
+          class="max-w-7xl mx-auto px-6 py-10 lg:px-10 lg:py-12 grid md:grid-cols-4 gap-8 text-sm"
+        >
+          <div class="space-y-4 md:col-span-2">
+            <div class="flex items-center gap-3">
+              <div
+                class="h-9 w-9 rounded-full bg-slate-950 border border-slate-700 flex items-center justify-center overflow-hidden"
+              >
+                <img
+                  src="https://media.publit.io/file/SYD/logo.jpg"
+                  alt="SYD ICT Solutions logo"
+                  class="h-7 w-7 object-contain"
+                  loading="lazy"
+                />
+              </div>
+              <div class="flex flex-col leading-tight">
+                <span
+                  class="text-[11px] font-semibold tracking-[0.18em] text-slate-300"
+                  >SYD ICT SOLUTIONS</span
+                >
+                <span class="text-[11px] text-slate-500">
+                  Transforming ideas into intelligent digital systems.
+                </span>
+              </div>
+            </div>
+            <p class="text-slate-400 text-xs max-w-xl">
+              SYD ICT Solutions is a Mogadishu-based technology company focused
+              on building secure, scalable and human-centered digital solutions
+              for universities, enterprises and organizations.
+            </p>
+          </div>
+          <div class="space-y-3">
+            <p class="footer-heading">Navigation</p>
+            <ul class="space-y-2 text-slate-400">
+              <li><a href="about.html" class="footer-link">About</a></li>
+              <li><a href="services.html" class="footer-link">Services</a></li>
+              <li><a href="projects.html" class="footer-link">Projects</a></li>
+              <li><a href="team.html" class="footer-link">Team</a></li>
+              <li><a href="blog.html" class="footer-link">Blog</a></li>
+            </ul>
+          </div>
+          <div class="space-y-3">
+            <p class="footer-heading">Contact</p>
+            <ul class="space-y-1 text-slate-400">
+              <li>Mogadishu, Somalia</li>
+              <li>
+                <a href="tel:+252000000000" class="footer-link"
+                  >Phone: +252 (0) 00 000 000</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@sydict.com" class="footer-link"
+                  >Email: info@sydict.com</a
+                >
+              </li>
+              <li>
+                <a href="https://www.sydict.com" class="footer-link"
+                  >www.sydict.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-slate-900/80 px-6 lg:px-10 py-4 text-[11px] text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-2 max-w-7xl mx-auto"
+        >
+          <p>© <span id="year"></span> SYD ICT Solutions. All rights reserved.</p>
+          <p>Designed &amp; engineered with care for modern institutions.</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Main script -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+
+

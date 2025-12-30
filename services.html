@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Discover the full range of ICT services from SYD ICT Solutions – software and web development, mobile apps, ICT consulting, branding, and ongoing support."
+    />
+    <title>Services | SYD ICT Solutions</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              syd: {
+                dark: '#020617',
+                accent: '#0f4a5c',
+                accentSoft: '#22c1c3',
+                accentAlt: '#38bdf8',
+                surface: '#020b12',
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+  <body class="bg-syd-dark text-slate-100 font-sans antialiased">
+    <div class="min-h-screen flex flex-col">
+      <!-- Shared Header -->
+      <header
+        class="sticky top-0 z-40 border-b border-slate-800/60 backdrop-blur-xl bg-syd-dark/70"
+        aria-label="Primary navigation"
+      >
+        <nav
+          class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4 lg:px-10"
+        >
+          <a
+            href="index.html"
+            class="flex items-center gap-3 group"
+            aria-label="SYD ICT Solutions home"
+          >
+            <div
+              class="h-10 w-10 rounded-full bg-slate-950/90 border border-slate-700/80 flex items-center justify-center shadow-soft overflow-hidden"
+            >
+              <img
+                src="https://media.publit.io/file/SYD/logo.jpg"
+                alt="SYD ICT Solutions logo"
+                class="h-8 w-8 object-contain"
+                loading="lazy"
+              />
+            </div>
+            <div class="flex flex-col leading-tight">
+              <span
+                class="text-sm font-semibold tracking-[0.18em] text-slate-200 group-hover:text-white transition-colors"
+                >SYD ICT</span
+              >
+              <span
+                class="text-xs text-slate-500 group-hover:text-slate-300 transition-colors"
+                >Intelligent Digital Systems</span
+              >
+            </div>
+          </a>
+
+          <button
+            class="lg:hidden inline-flex items-center justify-center rounded-full border border-slate-700/70 text-slate-200 px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-syd-accent"
+            id="mobile-nav-toggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div
+            id="desktop-nav"
+            class="hidden lg:flex items-center gap-10 text-sm font-medium"
+          >
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link nav-link-active"
+              >Services</a
+            >
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="team.html" class="nav-link">Team</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="contact.html" class="btn-outline-sm">Contact</a>
+          </div>
+        </nav>
+
+        <div
+          id="mobile-nav-menu"
+          class="lg:hidden hidden border-t border-slate-800 bg-syd-dark/95 backdrop-blur-xl"
+        >
+          <nav
+            class="max-w-7xl mx-auto px-6 py-4 space-y-2 text-sm font-medium"
+          >
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="about.html" class="mobile-link">About</a>
+            <a
+              href="services.html"
+              class="mobile-link mobile-link-active"
+              >Services</a
+            >
+            <a href="projects.html" class="mobile-link">Projects</a>
+            <a href="team.html" class="mobile-link">Team</a>
+            <a href="blog.html" class="mobile-link">Blog</a>
+            <a href="contact.html" class="mobile-link">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="flex-1">
+        <!-- Hero / Intro -->
+        <section
+          class="relative overflow-hidden border-b border-slate-800/80 bg-radial-soft"
+        >
+          <div
+            class="pointer-events-none absolute -left-40 -top-40 h-80 w-80 rounded-full bg-syd-accent/20 blur-3xl"
+          ></div>
+          <div
+            class="pointer-events-none absolute right-[-18rem] top-20 h-[24rem] w-[24rem] rounded-full bg-syd-accentAlt/25 blur-3xl"
+          ></div>
+
+          <div
+            class="relative max-w-7xl mx-auto px-6 pt-16 pb-14 lg:px-10 lg:pt-20 lg:pb-18"
+          >
+            <div class="max-w-3xl space-y-5">
+              <p class="section-label">Services</p>
+              <h1 class="section-heading text-3xl sm:text-4xl lg:text-5xl">
+                End-to-end ICT services tailored to your organization.
+              </h1>
+              <p class="text-sm sm:text-base text-slate-300 max-w-2xl">
+                From strategic consulting to full-stack development and ongoing
+                support, we help you design, build and maintain digital
+                solutions that work in the real world.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section
+          class="border-b border-slate-800/80 bg-slate-950/40"
+          aria-labelledby="services-heading"
+        >
+          <div class="max-w-7xl mx-auto px-6 py-16 lg:px-10 lg:py-20">
+            <div class="max-w-3xl space-y-4 mb-10">
+              <h2 id="services-heading" class="section-label">
+                What We Offer
+              </h2>
+              <p class="section-heading">
+                A modern service stack for universities, institutions and
+                businesses.
+              </p>
+              <p class="text-sm sm:text-base text-slate-300">
+                Each engagement is customized to your needs, but our core
+                capabilities remain consistent: robust engineering, thoughtful
+                design and long-term partnership.
+              </p>
+            </div>
+
+            <div
+              class="grid gap-6 md:gap-8 md:grid-cols-2 xl:grid-cols-3"
+              aria-label="Service cards"
+            >
+              <!-- Software & Web Development -->
+              <article class="service-card-lg group">
+                <div class="service-card-header">
+                  <span class="service-card-pill">
+                    <i class="fa-solid fa-code"></i>
+                    Enterprise-grade software &amp; web platforms
+                  </span>
+                  <div class="service-card-icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                  </div>
+                </div>
+                <h3 class="service-card-title">
+                  Software &amp; Web Development
+                </h3>
+                <p class="service-card-body">
+                  We design and build secure, scalable web applications and
+                  software platforms that map directly to your operations—from
+                  admissions and finance to HR, inventory and reporting.
+                </p>
+                <ul class="service-card-list">
+                  <li>Custom web portals &amp; dashboards</li>
+                  <li>Role-based access &amp; permissions</li>
+                  <li>Multi-branch &amp; multi-campus support</li>
+                  <li>Reporting and analytics modules</li>
+                </ul>
+                <p class="service-card-footer">
+                  Ideal for: universities, colleges, training centers,
+                  enterprises.
+                </p>
+              </article>
+
+              <!-- Mobile Application Development -->
+              <article class="service-card-lg group">
+                <div class="service-card-header">
+                  <span class="service-card-pill">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    Native &amp; cross-platform apps
+                  </span>
+                  <div class="service-card-icon">
+                    <i class="fa-solid fa-mobile-button"></i>
+                  </div>
+                </div>
+                <h3 class="service-card-title">
+                  Mobile Application Development
+                </h3>
+                <p class="service-card-body">
+                  We craft mobile experiences that keep your stakeholders
+                  connected—students, staff, customers and field teams—with
+                  real-time access to the information they need.
+                </p>
+                <ul class="service-card-list">
+                  <li>Android &amp; iOS applications</li>
+                  <li>Online/offline-friendly workflows</li>
+                  <li>Push notifications &amp; alerts</li>
+                  <li>Secure integrations with existing systems</li>
+                </ul>
+                <p class="service-card-footer">
+                  Ideal for: student apps, staff tools, customer apps, field
+                  operations.
+                </p>
+              </article>
+
+              <!-- ICT Consultancy & Digital Transformation -->
+              <article class="service-card-lg group">
+                <div class="service-card-header">
+                  <span class="service-card-pill">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    Strategy, architecture &amp; roadmaps
+                  </span>
+                  <div class="service-card-icon">
+                    <i class="fa-solid fa-network-wired"></i>
+                  </div>
+                </div>
+                <h3 class="service-card-title">
+                  ICT Consultancy &amp; Digital Transformation
+                </h3>
+                <p class="service-card-body">
+                  We partner with leadership teams to assess current systems,
+                  identify gaps and design pragmatic roadmaps for digital
+                  transformation that fit your context and budget.
+                </p>
+                <ul class="service-card-list">
+                  <li>ICT audits &amp; needs assessments</li>
+                  <li>System architecture &amp; integration planning</li>
+                  <li>Technology selection &amp; vendor evaluation</li>
+                  <li>Change management and capacity-building plans</li>
+                </ul>
+                <p class="service-card-footer">
+                  Ideal for: institutions beginning or scaling their digital
+                  journey.
+                </p>
+              </article>
+
+              <!-- Branding, UI/UX & Creative Design -->
+              <article class="service-card-lg group">
+                <div class="service-card-header">
+                  <span class="service-card-pill">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    Visual identity &amp; product design
+                  </span>
+                  <div class="service-card-icon">
+                    <i class="fa-solid fa-palette"></i>
+                  </div>
+                </div>
+                <h3 class="service-card-title">
+                  Branding, UI/UX &amp; Creative Design
+                </h3>
+                <p class="service-card-body">
+                  We create clear, modern visual identities and digital
+                  experiences that communicate professionalism, trust and
+                  innovation to your audience.
+                </p>
+                <ul class="service-card-list">
+                  <li>Brand identity systems &amp; guidelines</li>
+                  <li>UI/UX design for web and mobile products</li>
+                  <li>Marketing collateral &amp; presentation design</li>
+                  <li>Video, motion and multimedia content support</li>
+                </ul>
+                <p class="service-card-footer">
+                  Ideal for: organizations refreshing their brand or launching
+                  new products.
+                </p>
+              </article>
+
+              <!-- Maintenance & Support -->
+              <article class="service-card-lg group">
+                <div class="service-card-header">
+                  <span class="service-card-pill">
+                    <i class="fa-solid fa-lifebuoy"></i>
+                    Long-term care &amp; optimization
+                  </span>
+                  <div class="service-card-icon">
+                    <i class="fa-solid fa-headset"></i>
+                  </div>
+                </div>
+                <h3 class="service-card-title">Maintenance &amp; Support</h3>
+                <p class="service-card-body">
+                  Our work does not end at launch. We provide proactive support,
+                  enhancements and training so your solutions continue to
+                  deliver value.
+                </p>
+                <ul class="service-card-list">
+                  <li>Service-level agreements (SLAs)</li>
+                  <li>System monitoring &amp; performance tuning</li>
+                  <li>Regular updates, backups and security reviews</li>
+                  <li>End-user training and documentation</li>
+                </ul>
+                <p class="service-card-footer">
+                  Ideal for: organizations needing dependable technical
+                  partners.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Process Section -->
+        <section
+          class="border-b border-slate-800/80 bg-slate-950/60"
+          aria-labelledby="process-heading"
+        >
+          <div class="max-w-7xl mx-auto px-6 py-16 lg:px-10 lg:py-20">
+            <div
+              class="flex flex-col lg:flex-row lg:items-start gap-10 lg:gap-16"
+            >
+              <div class="lg:w-1/3 space-y-4">
+                <h2 id="process-heading" class="section-label">
+                  How We Work
+                </h2>
+                <p class="section-heading">
+                  A clear, collaborative process from idea to launch.
+                </p>
+                <p class="text-sm sm:text-base text-slate-300">
+                  Our delivery model keeps stakeholders aligned and projects
+                  moving smoothly.
+                </p>
+              </div>
+              <div class="lg:w-2/3 grid sm:grid-cols-2 gap-6 text-sm">
+                <div class="process-step">
+                  <p class="process-step-number">01</p>
+                  <p class="process-step-title">Discover &amp; understand</p>
+                  <p class="process-step-body">
+                    We start with stakeholder interviews, workflow mapping and
+                    system reviews to understand your current state and desired
+                    outcomes.
+                  </p>
+                </div>
+                <div class="process-step">
+                  <p class="process-step-number">02</p>
+                  <p class="process-step-title">Design &amp; prototype</p>
+                  <p class="process-step-body">
+                    We translate your requirements into information
+                    architectures, wireframes and visual prototypes for early
+                    feedback.
+                  </p>
+                </div>
+                <div class="process-step">
+                  <p class="process-step-number">03</p>
+                  <p class="process-step-title">Build &amp; integrate</p>
+                  <p class="process-step-body">
+                    Our engineering team develops, tests and integrates the
+                    solution with existing systems and infrastructure.
+                  </p>
+                </div>
+                <div class="process-step">
+                  <p class="process-step-number">04</p>
+                  <p class="process-step-title">Deploy, train &amp; support</p>
+                  <p class="process-step-body">
+                    We roll out in phases, train your teams, monitor adoption
+                    and provide ongoing support and optimization.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <section
+          class="border-b border-slate-800/80 bg-slate-950/80"
+          aria-label="Request a quote"
+        >
+          <div
+            class="max-w-7xl mx-auto px-6 py-12 lg:px-10 lg:py-16 flex flex-col md:flex-row gap-6 md:items-center md:justify-between"
+          >
+            <div class="space-y-2 max-w-xl">
+              <p class="text-xs font-semibold tracking-[0.24em] uppercase text-syd-accent">
+                Next step
+              </p>
+              <p class="text-lg md:text-xl font-semibold text-slate-50">
+                Request a tailored proposal for your institution.
+              </p>
+              <p class="text-sm text-slate-300">
+                Tell us about your organization, existing systems and goals.
+                We’ll prepare a clear, structured proposal and implementation
+                plan.
+              </p>
+            </div>
+            <a href="contact.html" class="btn-primary-lg w-full md:w-auto">
+              Request a Quote
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <!-- Shared Footer -->
+      <footer
+        class="border-t border-slate-900/80 bg-slate-950/90"
+        aria-label="Footer"
+      >
+        <div
+          class="max-w-7xl mx-auto px-6 py-10 lg:px-10 lg:py-12 grid md:grid-cols-4 gap-8 text-sm"
+        >
+          <div class="space-y-4 md:col-span-2">
+            <div class="flex items-center gap-3">
+              <div
+                class="h-9 w-9 rounded-full bg-slate-950 border border-slate-700 flex items-center justify-center overflow-hidden"
+              >
+                <img
+                  src="https://media.publit.io/file/SYD/logo.jpg"
+                  alt="SYD ICT Solutions logo"
+                  class="h-7 w-7 object-contain"
+                  loading="lazy"
+                />
+              </div>
+              <div class="flex flex-col leading-tight">
+                <span
+                  class="text-[11px] font-semibold tracking-[0.18em] text-slate-300"
+                  >SYD ICT SOLUTIONS</span
+                >
+                <span class="text-[11px] text-slate-500">
+                  Transforming ideas into intelligent digital systems.
+                </span>
+              </div>
+            </div>
+            <p class="text-slate-400 text-xs max-w-xl">
+              SYD ICT Solutions is a Mogadishu-based technology company focused
+              on building secure, scalable and human-centered digital solutions
+              for universities, enterprises and organizations.
+            </p>
+          </div>
+          <div class="space-y-3">
+            <p class="footer-heading">Navigation</p>
+            <ul class="space-y-2 text-slate-400">
+              <li><a href="about.html" class="footer-link">About</a></li>
+              <li><a href="services.html" class="footer-link">Services</a></li>
+              <li><a href="projects.html" class="footer-link">Projects</a></li>
+              <li><a href="team.html" class="footer-link">Team</a></li>
+              <li><a href="blog.html" class="footer-link">Blog</a></li>
+            </ul>
+          </div>
+          <div class="space-y-3">
+            <p class="footer-heading">Contact</p>
+            <ul class="space-y-1 text-slate-400">
+              <li>Mogadishu, Somalia</li>
+              <li>
+                <a href="tel:+252000000000" class="footer-link"
+                  >Phone: +252 (0) 00 000 000</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@sydict.com" class="footer-link"
+                  >Email: info@sydict.com</a
+                >
+              </li>
+              <li>
+                <a href="https://www.sydict.com" class="footer-link"
+                  >www.sydict.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-slate-900/80 px-6 lg:px-10 py-4 text-[11px] text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-2 max-w-7xl mx-auto"
+        >
+          <p>© <span id="year"></span> SYD ICT Solutions. All rights reserved.</p>
+          <p>Designed &amp; engineered with care for modern institutions.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+
+

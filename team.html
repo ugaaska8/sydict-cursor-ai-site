@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Meet the leadership and core team behind SYD ICT Solutions – engineers, designers and consultants building digital systems for Somalia."
+    />
+    <title>Our Team | SYD ICT Solutions</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              syd: {
+                dark: '#020617',
+                accent: '#0f4a5c',
+                accentSoft: '#22c1c3',
+                accentAlt: '#38bdf8',
+                surface: '#020b12',
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+  <body class="bg-syd-dark text-slate-100 font-sans antialiased">
+    <div class="min-h-screen flex flex-col">
+      <!-- Shared Header -->
+      <header
+        class="sticky top-0 z-40 border-b border-slate-800/60 backdrop-blur-xl bg-syd-dark/70"
+        aria-label="Primary navigation"
+      >
+        <nav
+          class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4 lg:px-10"
+        >
+          <a
+            href="index.html"
+            class="flex items-center gap-3 group"
+            aria-label="SYD ICT Solutions home"
+          >
+            <div
+              class="h-10 w-10 rounded-full bg-slate-950/90 border border-slate-700/80 flex items-center justify-center shadow-soft overflow-hidden"
+            >
+              <img
+                src="https://media.publit.io/file/SYD/logo.jpg"
+                alt="SYD ICT Solutions logo"
+                class="h-8 w-8 object-contain"
+                loading="lazy"
+              />
+            </div>
+            <div class="flex flex-col leading-tight">
+              <span
+                class="text-sm font-semibold tracking-[0.18em] text-slate-200 group-hover:text-white transition-colors"
+                >SYD ICT</span
+              >
+              <span
+                class="text-xs text-slate-500 group-hover:text-slate-300 transition-colors"
+                >Intelligent Digital Systems</span
+              >
+            </div>
+          </a>
+
+          <button
+            class="lg:hidden inline-flex items-center justify-center rounded-full border border-slate-700/70 text-slate-200 px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-syd-accent"
+            id="mobile-nav-toggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div
+            id="desktop-nav"
+            class="hidden lg:flex items-center gap-10 text-sm font-medium"
+          >
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="team.html" class="nav-link nav-link-active">Team</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="contact.html" class="btn-outline-sm">Contact</a>
+          </div>
+        </nav>
+
+        <div
+          id="mobile-nav-menu"
+          class="lg:hidden hidden border-t border-slate-800 bg-syd-dark/95 backdrop-blur-xl"
+        >
+          <nav
+            class="max-w-7xl mx-auto px-6 py-4 space-y-2 text-sm font-medium"
+          >
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="about.html" class="mobile-link">About</a>
+            <a href="services.html" class="mobile-link">Services</a>
+            <a href="projects.html" class="mobile-link">Projects</a>
+            <a
+              href="team.html"
+              class="mobile-link mobile-link-active"
+              >Team</a
+            >
+            <a href="blog.html" class="mobile-link">Blog</a>
+            <a href="contact.html" class="mobile-link">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="flex-1">
+        <!-- Hero / Intro -->
+        <section
+          class="relative overflow-hidden border-b border-slate-800/80 bg-radial-soft"
+        >
+          <div
+            class="pointer-events-none absolute -left-40 -top-40 h-80 w-80 rounded-full bg-syd-accent/20 blur-3xl"
+          ></div>
+          <div
+            class="pointer-events-none absolute right-[-18rem] top-20 h-[24rem] w-[24rem] rounded-full bg-syd-accentAlt/25 blur-3xl"
+          ></div>
+
+          <div
+            class="relative max-w-7xl mx-auto px-6 pt-16 pb-14 lg:px-10 lg:pt-20 lg:pb-18"
+          >
+            <div class="max-w-3xl space-y-5">
+              <p class="section-label">Our Team</p>
+              <h1 class="section-heading text-3xl sm:text-4xl lg:text-5xl">
+                A multidisciplinary team building the next generation of digital
+                systems.
+              </h1>
+              <p class="text-sm sm:text-base text-slate-300 max-w-2xl">
+                SYD ICT Solutions brings together engineers, designers,
+                architects and consultants who understand both global standards
+                and the unique needs of Somali institutions.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Team Grid -->
+        <section
+          class="border-b border-slate-800/80 bg-slate-950/40"
+          aria-labelledby="leadership-heading"
+        >
+          <div class="max-w-7xl mx-auto px-6 py-16 lg:px-10 lg:py-20">
+            <div class="space-y-4 mb-10 max-w-3xl">
+              <h2 id="leadership-heading" class="section-label">
+                Leadership &amp; Core Team
+              </h2>
+              <p class="section-heading">
+                People who combine technical depth with empathy for users.
+              </p>
+              <p class="text-sm sm:text-base text-slate-300">
+                While our full team includes engineers, analysts, designers and
+                support staff, these profiles highlight the leadership guiding
+                each engagement.
+              </p>
+            </div>
+
+            <div
+              class="grid gap-6 md:gap-8 md:grid-cols-2 xl:grid-cols-3"
+              aria-label="Team member profiles"
+            >
+              <!-- Member -->
+              <article class="team-card">
+                <div class="team-avatar">
+                  <span>AA</span>
+                </div>
+                <div class="space-y-2">
+                  <h3 class="team-name">Abdirahman Ali</h3>
+                  <p class="team-role">Founder &amp; Managing Director</p>
+                  <p class="team-bio">
+                    Abdirahman leads strategy and partnerships at SYD ICT
+                    Solutions, ensuring each project aligns with institutional
+                    goals and delivers long-term value.
+                  </p>
+                </div>
+                <div class="team-footer">
+                  <a
+                    href="#"
+                    class="team-link"
+                    aria-label="LinkedIn profile of Abdirahman Ali"
+                  >
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article class="team-card">
+                <div class="team-avatar">
+                  <span>HM</span>
+                </div>
+                <div class="space-y-2">
+                  <h3 class="team-name">Hodan Mohamed</h3>
+                  <p class="team-role">Head of Product &amp; UX</p>
+                  <p class="team-bio">
+                    Hodan oversees product design and user experience, guiding
+                    teams to create intuitive interfaces and accessible digital
+                    journeys.
+                  </p>
+                </div>
+                <div class="team-footer">
+                  <a
+                    href="#"
+                    class="team-link"
+                    aria-label="LinkedIn profile of Hodan Mohamed"
+                  >
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article class="team-card">
+                <div class="team-avatar">
+                  <span>OM</span>
+                </div>
+                <div class="space-y-2">
+                  <h3 class="team-name">Omar Mahad</h3>
+                  <p class="team-role">Lead Systems Architect</p>
+                  <p class="team-bio">
+                    Omar specializes in designing secure, scalable architectures
+                    that integrate seamlessly with existing infrastructure and
+                    workflows.
+                  </p>
+                </div>
+                <div class="team-footer">
+                  <a
+                    href="#"
+                    class="team-link"
+                    aria-label="LinkedIn profile of Omar Mahad"
+                  >
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article class="team-card">
+                <div class="team-avatar">
+                  <span>FS</span>
+                </div>
+                <div class="space-y-2">
+                  <h3 class="team-name">Fatima Salad</h3>
+                  <p class="team-role">Senior Software Engineer</p>
+                  <p class="team-bio">
+                    Fatima leads backend and API development, ensuring systems
+                    are robust, maintainable and optimized for performance.
+                  </p>
+                </div>
+                <div class="team-footer">
+                  <a
+                    href="#"
+                    class="team-link"
+                    aria-label="LinkedIn profile of Fatima Salad"
+                  >
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article class="team-card">
+                <div class="team-avatar">
+                  <span>YM</span>
+                </div>
+                <div class="space-y-2">
+                  <h3 class="team-name">Yasir Mohamed</h3>
+                  <p class="team-role">Mobile &amp; Front-end Lead</p>
+                  <p class="team-bio">
+                    Yasir focuses on building responsive web interfaces and
+                    mobile applications that feel fast, modern and reliable.
+                  </p>
+                </div>
+                <div class="team-footer">
+                  <a
+                    href="#"
+                    class="team-link"
+                    aria-label="LinkedIn profile of Yasir Mohamed"
+                  >
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article class="team-card">
+                <div class="team-avatar">
+                  <span>NR</span>
+                </div>
+                <div class="space-y-2">
+                  <h3 class="team-name">Nasra Roble</h3>
+                  <p class="team-role">ICT Consultant &amp; Trainer</p>
+                  <p class="team-bio">
+                    Nasra supports institutions with ICT strategy, change
+                    management and end-user training for successful
+                    implementations.
+                  </p>
+                </div>
+                <div class="team-footer">
+                  <a
+                    href="#"
+                    class="team-link"
+                    aria-label="LinkedIn profile of Nasra Roble"
+                  >
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <section
+          class="border-b border-slate-800/80 bg-slate-950/80"
+          aria-label="Work with our team"
+        >
+          <div
+            class="max-w-7xl mx-auto px-6 py-12 lg:px-10 lg:py-16 flex flex-col md:flex-row gap-6 md:items-center md:justify-between"
+          >
+            <div class="space-y-2 max-w-xl">
+              <p class="text-xs font-semibold tracking-[0.24em] uppercase text-syd-accent">
+                Collaborate
+              </p>
+              <p class="text-lg md:text-xl font-semibold text-slate-50">
+                Ready to co-create your next digital solution with us?
+              </p>
+              <p class="text-sm text-slate-300">
+                We bring structure, clarity and technical depth to every
+                engagement—while staying flexible to your needs and context.
+              </p>
+            </div>
+            <a href="contact.html" class="btn-primary-lg w-full md:w-auto">
+              Talk to the Team
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <!-- Shared Footer -->
+      <footer
+        class="border-t border-slate-900/80 bg-slate-950/90"
+        aria-label="Footer"
+      >
+        <div
+          class="max-w-7xl mx-auto px-6 py-10 lg:px-10 lg:py-12 grid md:grid-cols-4 gap-8 text-sm"
+        >
+          <div class="space-y-4 md:col-span-2">
+            <div class="flex items-center gap-3">
+              <div
+                class="h-9 w-9 rounded-full bg-slate-950 border border-slate-700 flex items-center justify-center overflow-hidden"
+              >
+                <img
+                  src="https://media.publit.io/file/SYD/logo.jpg"
+                  alt="SYD ICT Solutions logo"
+                  class="h-7 w-7 object-contain"
+                  loading="lazy"
+                />
+              </div>
+              <div class="flex flex-col leading-tight">
+                <span
+                  class="text-[11px] font-semibold tracking-[0.18em] text-slate-300"
+                  >SYD ICT SOLUTIONS</span
+                >
+                <span class="text-[11px] text-slate-500">
+                  Transforming ideas into intelligent digital systems.
+                </span>
+              </div>
+            </div>
+            <p class="text-slate-400 text-xs max-w-xl">
+              SYD ICT Solutions is a Mogadishu-based technology company focused
+              on building secure, scalable and human-centered digital solutions
+              for universities, enterprises and organizations.
+            </p>
+          </div>
+          <div class="space-y-3">
+            <p class="footer-heading">Navigation</p>
+            <ul class="space-y-2 text-slate-400">
+              <li><a href="about.html" class="footer-link">About</a></li>
+              <li><a href="services.html" class="footer-link">Services</a></li>
+              <li><a href="projects.html" class="footer-link">Projects</a></li>
+              <li><a href="team.html" class="footer-link">Team</a></li>
+              <li><a href="blog.html" class="footer-link">Blog</a></li>
+            </ul>
+          </div>
+          <div class="space-y-3">
+            <p class="footer-heading">Contact</p>
+            <ul class="space-y-1 text-slate-400">
+              <li>Mogadishu, Somalia</li>
+              <li>
+                <a href="tel:+252000000000" class="footer-link"
+                  >Phone: +252 (0) 00 000 000</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@sydict.com" class="footer-link"
+                  >Email: info@sydict.com</a
+                >
+              </li>
+              <li>
+                <a href="https://www.sydict.com" class="footer-link"
+                  >www.sydict.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-slate-900/80 px-6 lg:px-10 py-4 text-[11px] text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-2 max-w-7xl mx-auto"
+        >
+          <p>© <span id="year"></span> SYD ICT Solutions. All rights reserved.</p>
+          <p>Designed &amp; engineered with care for modern institutions.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+
+
